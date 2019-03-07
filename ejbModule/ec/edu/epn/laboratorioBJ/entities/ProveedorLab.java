@@ -10,8 +10,8 @@ import java.util.List;
  * 
  */
 @Entity
-@NamedQuery(name="Proveedor.findAll", query="SELECT p FROM Proveedor p")
-public class Proveedor implements Serializable {
+@NamedQuery(name="ProveedorLab.findAll", query="SELECT p FROM Proveedor p")
+public class ProveedorLab implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -45,7 +45,7 @@ public class Proveedor implements Serializable {
 	@JoinColumn(name="id_tipoproveedor")
 	private Tipoproveedor tipoproveedor;
 
-	public Proveedor() {
+	public ProveedorLab() {
 	}
 
 	public String getIdProveedor() {

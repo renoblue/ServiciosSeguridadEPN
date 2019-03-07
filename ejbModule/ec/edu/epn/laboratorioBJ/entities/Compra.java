@@ -37,12 +37,12 @@ public class Compra implements Serializable {
 	//bi-directional many-to-one association to Proveedor
 	@ManyToOne
 	@JoinColumn(name="id_proveedor")
-	private Proveedor proveedor;
+	private ProveedorLab proveedor;
 
 	//bi-directional many-to-one association to Unidad
 	@ManyToOne
 	@JoinColumn(name="id_unidad")
-	private Unidad unidad;
+	private UnidadLabo unidad;
 
 	//bi-directional many-to-one association to Ordeninventario
 	@OneToMany(mappedBy="compra")
@@ -99,19 +99,19 @@ public class Compra implements Serializable {
 		this.montoCo = montoCo;
 	}
 
-	public Proveedor getProveedor() {
+	public ProveedorLab getProveedor() {
 		return this.proveedor;
 	}
 
-	public void setProveedor(Proveedor proveedor) {
+	public void setProveedor(ProveedorLab proveedor) {
 		this.proveedor = proveedor;
 	}
 
-	public Unidad getUnidad() {
+	public UnidadLabo getUnidad() {
 		return this.unidad;
 	}
 
-	public void setUnidad(Unidad unidad) {
+	public void setUnidad(UnidadLabo unidad) {
 		this.unidad = unidad;
 	}
 

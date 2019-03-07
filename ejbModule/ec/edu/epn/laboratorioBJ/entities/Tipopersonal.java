@@ -26,7 +26,7 @@ public class Tipopersonal implements Serializable {
 
 	//bi-directional many-to-one association to Personal
 	@OneToMany(mappedBy="tipopersonal")
-	private List<Personal> personals;
+	private List<PersonalLab> personals;
 
 	public Tipopersonal() {
 	}
@@ -55,22 +55,22 @@ public class Tipopersonal implements Serializable {
 		this.nombreTp = nombreTp;
 	}
 
-	public List<Personal> getPersonals() {
+	public List<PersonalLab> getPersonals() {
 		return this.personals;
 	}
 
-	public void setPersonals(List<Personal> personals) {
+	public void setPersonals(List<PersonalLab> personals) {
 		this.personals = personals;
 	}
 
-	public Personal addPersonal(Personal personal) {
+	public PersonalLab addPersonal(PersonalLab personal) {
 		getPersonals().add(personal);
 		personal.setTipopersonal(this);
 
 		return personal;
 	}
 
-	public Personal removePersonal(Personal personal) {
+	public PersonalLab removePersonal(PersonalLab personal) {
 		getPersonals().remove(personal);
 		personal.setTipopersonal(null);
 

@@ -32,7 +32,7 @@ public class Tipoproducto implements Serializable {
 
 	//bi-directional many-to-one association to Producto
 	@OneToMany(mappedBy="tipoproducto")
-	private List<Producto> productos;
+	private List<ProductoLab> productos;
 
 	public Tipoproducto() {
 	}
@@ -83,22 +83,22 @@ public class Tipoproducto implements Serializable {
 		return existencia;
 	}
 
-	public List<Producto> getProductos() {
+	public List<ProductoLab> getProductos() {
 		return this.productos;
 	}
 
-	public void setProductos(List<Producto> productos) {
+	public void setProductos(List<ProductoLab> productos) {
 		this.productos = productos;
 	}
 
-	public Producto addProducto(Producto producto) {
+	public ProductoLab addProducto(ProductoLab producto) {
 		getProductos().add(producto);
 		producto.setTipoproducto(this);
 
 		return producto;
 	}
 
-	public Producto removeProducto(Producto producto) {
+	public ProductoLab removeProducto(ProductoLab producto) {
 		getProductos().remove(producto);
 		producto.setTipoproducto(null);
 

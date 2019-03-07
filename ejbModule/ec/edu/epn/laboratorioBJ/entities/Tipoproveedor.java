@@ -26,7 +26,7 @@ public class Tipoproveedor implements Serializable {
 
 	//bi-directional many-to-one association to Proveedor
 	@OneToMany(mappedBy="tipoproveedor")
-	private List<Proveedor> proveedors;
+	private List<ProveedorLab> proveedors;
 
 	public Tipoproveedor() {
 	}
@@ -55,22 +55,22 @@ public class Tipoproveedor implements Serializable {
 		this.nombreTpv = nombreTpv;
 	}
 
-	public List<Proveedor> getProveedors() {
+	public List<ProveedorLab> getProveedors() {
 		return this.proveedors;
 	}
 
-	public void setProveedors(List<Proveedor> proveedors) {
+	public void setProveedors(List<ProveedorLab> proveedors) {
 		this.proveedors = proveedors;
 	}
 
-	public Proveedor addProveedor(Proveedor proveedor) {
+	public ProveedorLab addProveedor(ProveedorLab proveedor) {
 		getProveedors().add(proveedor);
 		proveedor.setTipoproveedor(this);
 
 		return proveedor;
 	}
 
-	public Proveedor removeProveedor(Proveedor proveedor) {
+	public ProveedorLab removeProveedor(ProveedorLab proveedor) {
 		getProveedors().remove(proveedor);
 		proveedor.setTipoproveedor(null);
 

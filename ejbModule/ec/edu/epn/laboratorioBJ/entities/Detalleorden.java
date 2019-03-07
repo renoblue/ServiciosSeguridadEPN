@@ -55,7 +55,7 @@ public class Detalleorden implements Serializable {
 	//bi-directional many-to-one association to Personal
 	@ManyToOne
 	@JoinColumn(name="id_personal")
-	private Personal personal;
+	private PersonalLab personal;
 
 	//bi-directional many-to-one association to Ordeninventario
 	@OneToMany(mappedBy="detalleorden")
@@ -144,11 +144,11 @@ public class Detalleorden implements Serializable {
 		this.ordenTrabajo = ordenTrabajo;
 	}
 
-	public Personal getPersonal() {
+	public PersonalLab getPersonal() {
 		return this.personal;
 	}
 
-	public void setPersonal(Personal personal) {
+	public void setPersonal(PersonalLab personal) {
 		this.personal = personal;
 	}
 

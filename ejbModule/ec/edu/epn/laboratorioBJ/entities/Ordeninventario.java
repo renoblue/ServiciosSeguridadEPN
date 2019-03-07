@@ -60,7 +60,7 @@ public class Ordeninventario implements Serializable {
 	//bi-directional many-to-one association to Unidad
 	@ManyToOne
 	@JoinColumn(name="id_unidad")
-	private Unidad unidad;
+	private UnidadLabo unidad;
 
 	public Ordeninventario() {
 	}
@@ -167,11 +167,11 @@ public class Ordeninventario implements Serializable {
 		this.tipordeninv = tipordeninv;
 	}
 
-	public Unidad getUnidad() {
+	public UnidadLabo getUnidad() {
 		return this.unidad;
 	}
 
-	public void setUnidad(Unidad unidad) {
+	public void setUnidad(UnidadLabo unidad) {
 		this.unidad = unidad;
 	}
 

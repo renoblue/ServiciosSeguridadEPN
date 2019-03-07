@@ -26,7 +26,7 @@ public class Riesgoespecifico implements Serializable {
 
 	//bi-directional many-to-one association to Producto
 	@OneToMany(mappedBy="riesgoespecifico")
-	private List<Producto> productos;
+	private List<ProductoLab> productos;
 
 	public Riesgoespecifico() {
 	}
@@ -55,22 +55,22 @@ public class Riesgoespecifico implements Serializable {
 		this.nombreRe = nombreRe;
 	}
 
-	public List<Producto> getProductos() {
+	public List<ProductoLab> getProductos() {
 		return this.productos;
 	}
 
-	public void setProductos(List<Producto> productos) {
+	public void setProductos(List<ProductoLab> productos) {
 		this.productos = productos;
 	}
 
-	public Producto addProducto(Producto producto) {
+	public ProductoLab addProducto(ProductoLab producto) {
 		getProductos().add(producto);
 		producto.setRiesgoespecifico(this);
 
 		return producto;
 	}
 
-	public Producto removeProducto(Producto producto) {
+	public ProductoLab removeProducto(ProductoLab producto) {
 		getProductos().remove(producto);
 		producto.setRiesgoespecifico(null);
 

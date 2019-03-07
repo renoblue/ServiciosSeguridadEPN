@@ -103,7 +103,7 @@ public class Existencia implements Serializable {
 	//bi-directional many-to-one association to Producto
 	@ManyToOne
 	@JoinColumn(name="id_producto")
-	private Producto producto;
+	private ProductoLab producto;
 
 	//bi-directional many-to-one association to Tipoproducto
 	@ManyToOne
@@ -310,11 +310,11 @@ public class Existencia implements Serializable {
 		this.presentacion = presentacion;
 	}
 
-	public Producto getProducto() {
+	public ProductoLab getProducto() {
 		return this.producto;
 	}
 
-	public void setProducto(Producto producto) {
+	public void setProducto(ProductoLab producto) {
 		this.producto = producto;
 	}
 

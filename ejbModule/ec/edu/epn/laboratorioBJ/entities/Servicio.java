@@ -43,7 +43,7 @@ public class Servicio implements Serializable {
 	//bi-directional many-to-one association to Laboratorio
 	@ManyToOne
 	@JoinColumn(name="id_laboratorio")
-	private Laboratorio laboratorio;
+	private LaboratorioLab laboratorio;
 
 	//bi-directional many-to-one association to Tiposervicio
 	@ManyToOne
@@ -145,11 +145,11 @@ public class Servicio implements Serializable {
 		return metodo;
 	}
 
-	public Laboratorio getLaboratorio() {
+	public LaboratorioLab getLaboratorio() {
 		return this.laboratorio;
 	}
 
-	public void setLaboratorio(Laboratorio laboratorio) {
+	public void setLaboratorio(LaboratorioLab laboratorio) {
 		this.laboratorio = laboratorio;
 	}
 

@@ -294,7 +294,7 @@
 		<class>ec.edu.epn.laboratorioBJ.entities.Existencia</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Grado</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Hidratacion</class>
-		<class>ec.edu.epn.laboratorioBJ.entities.Laboratorio</class>
+		<class>ec.edu.epn.laboratorioBJ.entities.LaboratorioLab</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.LaboratorioUsuario</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.LaboratorioUsuarioPK</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Metodo</class>
@@ -303,12 +303,12 @@
 		<class>ec.edu.epn.laboratorioBJ.entities.Norma</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.OrdenTrabajo</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Ordeninventario</class>
-		<class>ec.edu.epn.laboratorioBJ.entities.Personal</class>
+		<class>ec.edu.epn.laboratorioBJ.entities.PersonalLab</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Posgiro</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Presentacion</class>
-		<class>ec.edu.epn.laboratorioBJ.entities.Producto</class>
+		<class>ec.edu.epn.laboratorioBJ.entities.ProductoLab</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Proforma</class>
-		<class>ec.edu.epn.laboratorioBJ.entities.Proveedor</class>
+		<class>ec.edu.epn.laboratorioBJ.entities.ProveedorLab</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Pureza</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Riesgoespecifico</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.SaldoExistencia</class>
@@ -321,7 +321,7 @@
 		<class>ec.edu.epn.laboratorioBJ.entities.Tipoproveedor</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Tipordeninv</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Tiposervicio</class>
-		<class>ec.edu.epn.laboratorioBJ.entities.Unidad</class>
+		<class>ec.edu.epn.laboratorioBJ.entities.UnidadLabo</class>
 		<class>ec.edu.epn.laboratorioBJ.entities.Unidadmedida</class>
 		
 

@@ -19,7 +19,7 @@ public class BodegaUsuario implements Serializable {
 
 	//bi-directional many-to-one association to laboratory
 	@ManyToOne
-	@JoinColumn(name="id_bodega")
+	@JoinColumn(name="id_bodega",insertable=false, updatable=false)
 	private laboratory bodega;
 
 	public BodegaUsuario() {

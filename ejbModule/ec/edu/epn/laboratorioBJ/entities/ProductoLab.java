@@ -10,8 +10,8 @@ import java.util.List;
  * 
  */
 @Entity
-@NamedQuery(name="Producto.findAll", query="SELECT p FROM Producto p")
-public class Producto implements Serializable {
+@NamedQuery(name="ProductoLab.findAll", query="SELECT p FROM Producto p")
+public class ProductoLab implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -74,7 +74,7 @@ public class Producto implements Serializable {
 	@JoinColumn(name="id_tipoprod")
 	private Tipoproducto tipoproducto;
 
-	public Producto() {
+	public ProductoLab() {
 	}
 
 	public String getIdProducto() {

@@ -12,7 +12,7 @@ import java.util.List;
  */
 @Entity
 @NamedQuery(name="Personal.findAll", query="SELECT p FROM Personal p")
-public class Personal implements Serializable {
+public class PersonalLab implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -71,7 +71,7 @@ public class Personal implements Serializable {
 	@JoinColumn(name="id_tipopersonal")
 	private Tipopersonal tipopersonal;
 
-	public Personal() {
+	public PersonalLab() {
 	}
 
 	public String getIdPersonal() {

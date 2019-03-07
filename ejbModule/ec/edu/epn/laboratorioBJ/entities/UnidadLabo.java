@@ -10,8 +10,8 @@ import java.util.List;
  * 
  */
 @Entity
-@NamedQuery(name="Unidad.findAll", query="SELECT u FROM Unidad u")
-public class Unidad implements Serializable {
+@NamedQuery(name="UnidadLab.findAll", query="SELECT u FROM Unidad u")
+public class UnidadLabo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -66,13 +66,13 @@ public class Unidad implements Serializable {
 
 	//bi-directional many-to-one association to Laboratorio
 	@OneToMany(mappedBy="unidad")
-	private List<Laboratorio> laboratorios;
+	private List<LaboratorioLab> laboratorios;
 
 	//bi-directional many-to-one association to Ordeninventario
 	@OneToMany(mappedBy="unidad")
 	private List<Ordeninventario> ordeninventarios;
 
-	public Unidad() {
+	public UnidadLabo() {
 	}
 
 	public Integer getIdUnidad() {
@@ -217,22 +217,22 @@ public class Unidad implements Serializable {
 		return compra;
 	}
 
-	public List<Laboratorio> getLaboratorios() {
+	public List<LaboratorioLab> getLaboratorios() {
 		return this.laboratorios;
 	}
 
-	public void setLaboratorios(List<Laboratorio> laboratorios) {
+	public void setLaboratorios(List<LaboratorioLab> laboratorios) {
 		this.laboratorios = laboratorios;
 	}
 
-	public Laboratorio addLaboratorio(Laboratorio laboratorio) {
+	public LaboratorioLab addLaboratorio(LaboratorioLab laboratorio) {
 		getLaboratorios().add(laboratorio);
 		laboratorio.setUnidad(this);
 
 		return laboratorio;
 	}
 
-	public Laboratorio removeLaboratorio(Laboratorio laboratorio) {
+	public LaboratorioLab removeLaboratorio(LaboratorioLab laboratorio) {
 		getLaboratorios().remove(laboratorio);
 		laboratorio.setUnidad(null);
 

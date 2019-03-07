@@ -19,7 +19,7 @@ public class CaracteristicaUsuario implements Serializable {
 
 	//bi-directional many-to-one association to Caracteristica
 	@ManyToOne
-	@JoinColumn(name="id_caracteristica")
+	@JoinColumn(name="id_caracteristica",insertable=false, updatable=false)
 	private Caracteristica caracteristica;
 
 	public CaracteristicaUsuario() {

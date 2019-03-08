@@ -15,8 +15,10 @@ public class Grado implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator (name = "GRADO_IDGRADO_GENERADOR", sequenceName = "secuencia_grado")
-	@GeneratedValue (strategy=GenerationType.SEQUENCE, generator="GRADO_IDGRADO_GENERATOR" )
+
+	@SequenceGenerator(name="GRADO_IDGRADO_GENERATOR", sequenceName="secuencia_grado",allocationSize=1, catalog="bddcorpepn",schema="`Laboratorios`")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="GRADO_IDGRADO_GENERATOR")
+	
 	@Column(name = "id_grado")
 	private String idGrado;
 

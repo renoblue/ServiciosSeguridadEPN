@@ -1,0 +1,13 @@
+
+package ec.edu.epn.laboratoriosBJ.beans;
+
+import javax.ejb.Local;
+
+import ec.edu.epn.generic.DAO.DaoGenerico;
+import ec.edu.epn.laboratorioBJ.entities.Grado;
+
+@Local
+public interface GradoDAO extends DaoGenerico<Grado>{
+
+}
+
